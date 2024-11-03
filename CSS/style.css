@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 16px;
     width: 100%;
     height: 100%;
@@ -51,31 +51,84 @@ body {
     text-decoration: underline;
 }
 
-#hero-section {
+.hero-section {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 32px 0;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    font-size: 14px;
+    margin-top: 64px;
+}
+
+.contact-section__list {
+    list-style: none;
+    color: #787878;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-section__list > li {
+    border-bottom: 1px solid #b9b9b9;
+    padding-bottom: 4px;
+}
+
+.contact-section__social-list {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.contact-section__social-list > li > a {
+    border: 1px solid #b9b9b9;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #222222;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-section__social-list > li > a:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.contact-section__right {
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
-#left-content {
-    width: 400px;
-    height: 300px;
-    border: 1px solid #000000;
-    border-radius: 16px;
-    overflow: auto;
-    padding: 16px;
-    text-align: justify;
+.button {
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
-#right-content {
-    border: 1px solid #000000;
-    padding: 16px;
-    position: relative;
-    margin: 20px;
-}
-
-#read-more-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.button.button-primary {
+    background-color: #222222;
+    color: #ffffff;
 }

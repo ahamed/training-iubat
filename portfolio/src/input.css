@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.divider {
+    @apply inline-block h-[1px] w-full bg-slate-200;
+}
+
+.button {
+    @apply inline-flex items-center gap-2 px-4 py-2 text-main-default justify-center font-semibold;
+}
+
+.card {
+    @apply bg-white shadow-sm p-10 flex flex-col gap-5 items-center justify-center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 16px;
+}

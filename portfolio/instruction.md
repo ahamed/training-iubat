@@ -1,0 +1,6 @@
+- Visit : https://tailwindcss.com/docs/installation
+- Install Tailwind CSS via CDN in HTML
+- Create your custom CSS file
+- Add Tailwind directives to your CSS file
+- Add your custom styles to the CSS file
+- Run your build command

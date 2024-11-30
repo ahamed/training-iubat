@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-surface-default">
+    <div class="grid grid-cols-[305px_auto_108px] gap-8">
+        <!-- The left sidebar -->
+        <aside class="left-sidebar bg-white min-h-[100vh] shadow-sm flex flex-col gap-6 py-10 px-6">
+            <div class="w-full">
+                <img src="./images/profile.png" alt="profile" class="w-[150px] h-[150px] rounded-full mx-auto">
+                <div class="mt-8 flex flex-col gap-4">
+                    <div class="text-center flex flex-col gap-4">
+                        <h1 class="text-2xl font-bold">Rayan Adlardard</h1>
+                        <p class="text-slate-500">Font-end Developer</p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <ul class="flex gap-4 items-center list-none justify-center">
+                            <li><a href="#" class="flex items-center justify-center rounded-full w-7 h-7 bg-primary-default"><span class="fab fa-facebook"></span></a></li>
+                            <li><a href="#" class="flex items-center justify-center rounded-full w-7 h-7 bg-primary-default"><span class="fab fa-x-twitter"></span></a></li>
+                            <li><a href="#" class="flex items-center justify-center rounded-full w-7 h-7 bg-primary-default"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#" class="flex items-center justify-center rounded-full w-7 h-7 bg-primary-default"><span class="fab fa-linkedin"></span></a></li>
+                            <li><a href="#" class="flex items-center justify-center rounded-full w-7 h-7 bg-primary-default"><span class="fab fa-youtube"></span></a></li>
+                            <li><a href="#" class="flex items-center justify-center rounded-full w-7 h-7 bg-primary-default"><span class="fab fa-dribbble"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class="divider"></span>
+            <div id="personal-info">
+                <ul class="list-none flex flex-col gap-2">
+                    <li class="flex items-center justify-between">
+                        <span class="bg-primary-default text-main-default py-1 px-2">Age: </span>
+                        <span class="text-main-default text-sm">24</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <span class="bg-primary-default text-main-default py-1 px-2">Residence: </span>
+                        <span class="text-main-default text-sm">BD</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <span class="bg-primary-default text-main-default py-1 px-2">Freelance: </span>
+                        <span class="text-sm text-green-600">Available</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <span class="bg-primary-default text-main-default py-1 px-2">Address: </span>
+                        <span class="text-main-default text-sm">Dhaka, Bangladesh</span>
+                    </li>
+                </ul>
+            </div>
+            <span class="divider"></span>
+
+            <div id="languages">
+                <h2 class="text-main-default text-lg font-bold">Languages</h2>
+                <ul class="list-none flex flex-col gap-2 mt-2">
+                    <li class="flex flex-col gap-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-main-neutral">Bangla: </span>
+                            <span class="text-main-neutral text-sm">100%</span>
+                        </div>
+                        <div class="w-full h-[6px] px-0.5 border solid border-primary-default rounded-full flex items-center">
+                            <span class="block w-full h-[2px] bg-primary-default rounded-full"></span>
+                        </div>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-main-neutral">English: </span>
+                            <span class="text-main-neutral text-sm">80%</span>
+                        </div>
+                        <div class="w-full h-[6px] px-0.5 border solid border-primary-default rounded-full flex items-center">
+                            <span class="block w-[80%] h-[2px] bg-primary-default rounded-full"></span>
+                        </div>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-main-neutral">Spanish: </span>
+                            <span class="text-main-neutral text-sm">60%</span>
+                        </div>
+                        <div class="w-full h-[6px] px-0.5 border solid border-primary-default rounded-full flex items-center">
+                            <span class="block w-[60%] h-[2px] bg-primary-default rounded-full"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <div id="skills">
+                <h2 class="text-main-default text-lg font-bold">Skills</h2>
+                <ul class="list-none flex flex-col gap-2 mt-2">
+                    <li class="flex flex-col gap-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-main-neutral">HTML: </span>
+                            <span class="text-main-neutral text-sm">90%</span>
+                        </div>
+                        <div class="w-full h-[6px] px-0.5 border solid border-primary-default rounded-full flex items-center">
+                            <span class="block w-[90%] h-[2px] bg-primary-default rounded-full"></span>
+                        </div>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-main-neutral">CSS: </span>
+                            <span class="text-main-neutral text-sm">85%</span>
+                        </div>
+                        <div class="w-full h-[6px] px-0.5 border solid border-primary-default rounded-full flex items-center">
+                            <span class="block w-[85%] h-[2px] bg-primary-default rounded-full"></span>
+                        </div>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-main-neutral">JS: </span>
+                            <span class="text-main-neutral text-sm">80%</span>
+                        </div>
+                        <div class="w-full h-[6px] px-0.5 border solid border-primary-default rounded-full flex items-center">
+                            <span class="block w-[80%] h-[2px] bg-primary-default rounded-full"></span>
+                        </div>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-main-neutral">PHP: </span>
+                            <span class="text-main-neutral text-sm">75%</span>
+                        </div>
+                        <div class="w-full h-[6px] px-0.5 border solid border-primary-default rounded-full flex items-center">
+                            <span class="block w-[75%] h-[2px] bg-primary-default rounded-full"></span>
+                        </div>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-main-neutral">WordPress: </span>
+                            <span class="text-main-neutral text-sm">85%</span>
+                        </div>
+                        <div class="w-full h-[6px] px-0.5 border solid border-primary-default rounded-full flex items-center">
+                            <span class="block w-[85%] h-[2px] bg-primary-default rounded-full"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <div id="extra-skills">
+                <h2 class="text-main-default text-lg font-bold">Extra Skills</h2>
+                <ul class="list-none flex flex-col gap-2 mt-2">
+                    <li class="flex gap-4 items-center">
+                        <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#FFB400" d="M.5.5h9v9h-9z"/><path stroke="#FFB400" d="M5.5 5.5h9v9h-9z"/><path stroke="#FFB400" d="M.5.5h9v9h-9z"/><path stroke="#FFB400" d="M5.5 5.5h9v9h-9z"/></svg>
+                        <span class="text-main-neutral text-sm">Bootstrap, Materialize</span>
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#FFB400" d="M.5.5h9v9h-9z"/><path stroke="#FFB400" d="M5.5 5.5h9v9h-9z"/><path stroke="#FFB400" d="M.5.5h9v9h-9z"/><path stroke="#FFB400" d="M5.5 5.5h9v9h-9z"/></svg>
+                        <span class="text-main-neutral text-sm">Stylus, Sass, Less</span>
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#FFB400" d="M.5.5h9v9h-9z"/><path stroke="#FFB400" d="M5.5 5.5h9v9h-9z"/><path stroke="#FFB400" d="M.5.5h9v9h-9z"/><path stroke="#FFB400" d="M5.5 5.5h9v9h-9z"/></svg>
+                        <span class="text-main-neutral text-sm">Gulp, Webpack, Grunt</span>
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#FFB400" d="M.5.5h9v9h-9z"/><path stroke="#FFB400" d="M5.5 5.5h9v9h-9z"/><path stroke="#FFB400" d="M.5.5h9v9h-9z"/><path stroke="#FFB400" d="M5.5 5.5h9v9h-9z"/></svg>
+                        <span class="text-main-neutral text-sm">GIT Knowledge</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <button type="button" class="button bg-primary-default">
+                <span>Download CV</span>
+                <svg width="14" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M2.333 12.952h9.334V8.286h1.166v5.333a.718.718 0 0 1-.17.471.55.55 0 0 1-.413.196H1.75a.549.549 0 0 1-.413-.196.718.718 0 0 1-.17-.471V8.286h1.166v4.666Zm5.833-6.666h2.917L7 10.952 2.917 6.286h2.916v-4h2.333v4Z" fill="#2B2B2B"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .286)" d="M0 0h14v16H0z"/></clipPath></defs></svg>
+            </button>
+        </aside>
+
+        <!-- The main content -->
+        <main class="max-w-[1200px] mx-auto">
+            <section id="hero-section" class="w-full h-auto bg-white px-12 shadow-sm bg-[url('./images/background.png')] bg-contain bg-no-repeat flex justify-between">
+                <div class="left max-w-[500px] flex flex-col gap-6 py-[100px]">
+                    <h1 class="font-bold text-5xl leading-[123%]">I’m Rayan Adlrdard <span class="text-primary-default">Front-end</span> Developer </h1>
+                    <p class="text-main-neutral text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</p>
+                    <div>
+                        <button type="button" class="button bg-primary-default rounded-md uppercase font-light">
+                            <span>Hire Me</span>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><g clip-path="url(#a)"><path d="M10.781 7.333 7.205 3.757l.943-.943L13.333 8l-5.185 5.185-.943-.943 3.576-3.576H2.667V7.333h8.114Z" fill="#2B2B2B"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="right">
+                    <img srcset="./images/profile-full.jpg" alt="Hero Image" class="h-full object-cover" width="324" >
+                </div>
+            </section>
+
+            
+            <section id="my-works" class="w-full mt-[136px] text-center">
+                <h4 class="text-main-default text-4xl font-bold">My Services</h4>
+                <p class="text-main-neutral mt-6 max-w-[440px] mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+
+                <div class="grid grid-cols-3 gap-5 mt-10">
+                    <div class="card min-h-[310px]">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 74" width="68" height="68"><path d="M32.375 38.156h9.25v2.313h-9.25v-2.313Z" fill="#FFB400"/><path d="M35.844 34.688h2.312v9.25h-2.312v-9.25ZM65.906 38.156h2.313v2.313h-2.313v-2.313ZM56.656 38.156h2.313v2.313h-2.313v-2.313ZM61.281 33.531h2.313v2.313H61.28V33.53ZM61.281 42.781h2.313v2.313H61.28V42.78ZM10.66 20.379l-5.203-6.504 5.203-6.504 1.805 1.445-4.047 5.059 4.047 5.059-1.805 1.445ZM28.653 20.379l-1.806-1.445 4.048-5.059-4.048-5.059 1.806-1.445 5.202 6.504-5.202 6.504ZM14.738 17.738l8.096-9.248 1.74 1.522-8.096 9.249-1.74-1.523ZM9.25 50.875H4.625V46.25h2.313v2.313H9.25v2.312Z" fill="#FFB400"/><path d="M70.531 2.313H3.47A3.469 3.469 0 0 0 0 5.78v46.25A3.469 3.469 0 0 0 3.469 55.5H27.75v5.781a3.469 3.469 0 0 1-3.469 3.469H18.5v6.938h37V64.75h-5.781a3.469 3.469 0 0 1-3.469-3.469V55.5h24.281A3.469 3.469 0 0 0 74 52.031V5.781a3.469 3.469 0 0 0-3.469-3.468Zm-17.344 64.75v2.312H20.813v-2.313h32.374ZM37 62.486a3.469 3.469 0 0 0 3.469-3.469V55.5h3.468v5.781a5.724 5.724 0 0 0 1.187 3.469H28.876a5.724 5.724 0 0 0 1.186-3.469V55.5h3.47v3.517A3.469 3.469 0 0 0 37 62.487Zm-1.156-3.469V55.5h2.312v3.517a1.156 1.156 0 0 1-2.312 0Zm35.843-6.986c0 .639-.517 1.157-1.156 1.157H3.47a1.156 1.156 0 0 1-1.156-1.157V41.625h23.356A11.553 11.553 0 0 0 47 45.094h5.435a11.532 11.532 0 0 0 19.252 1.126v5.811Zm-9.25-3.468a9.198 9.198 0 0 1-8.276-5.141l-.32-.64h-8.244l-.32.64A9.25 9.25 0 1 1 37 30.062h25.438a9.25 9.25 0 0 1 9.25 9.25 9.25 9.25 0 0 1-9.25 9.25Zm9.25-16.158a11.54 11.54 0 0 0-9.25-4.655H37c-6.383.007-11.556 5.18-11.563 11.563H2.313V5.78c0-.638.518-1.156 1.157-1.156H70.53c.639 0 1.156.518 1.156 1.156v26.624Z" fill="#FFB400"/><path d="M47.406 38.156h4.625v2.313h-4.625v-2.313ZM34.688 9.25h9.25v2.313h-9.25V9.25ZM48.563 9.25h18.5v2.313h-18.5V9.25ZM50.875 13.875h16.188v2.313H50.874v-2.313ZM37 13.875h9.25v2.313H37v-2.313ZM34.688 18.5h23.124v2.313H34.689V18.5ZM62.438 18.5h4.624v2.313h-4.624V18.5ZM6.938 23.125H18.5v2.313H6.937v-2.313ZM23.125 23.125h21.969v2.313H23.125v-2.313ZM48.563 23.125h18.5v2.313h-18.5v-2.313ZM6.938 27.75h18.5v2.313h-18.5V27.75ZM6.938 32.375h9.25v2.313h-9.25v-2.313ZM18.5 32.375h4.625v2.313H18.5v-2.313Z" fill="#FFB400"/></svg>
+                        <h5>Web Development</h5>
+                        <p class="text-main-neutral text-sm">Blog, E-Commerce</p>
+                    </div>
+                    <div class="card min-h-[310px]">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 68" width="68" height="68"><g fill="#FFB400"><path d="M31.61 49.338a.996.996 0 1 0 0 1.993h4.78a.996.996 0 1 0 0-1.993h-4.78ZM11.953 33.872h6.584a2.791 2.791 0 0 0 2.602 1.793c1.187 0 2.2-.747 2.602-1.793h1.316a.996.996 0 1 0 0-1.993h-1.316a2.791 2.791 0 0 0-2.602-1.793c-1.186 0-2.2.747-2.602 1.793h-6.584a.996.996 0 1 0 0 1.993Zm9.186-1.793a.798.798 0 1 1-.001 1.595.798.798 0 0 1 .001-1.595ZM11.953 28.16h1.272a2.791 2.791 0 0 0 2.602 1.794c1.186 0 2.2-.747 2.602-1.793h6.628a.996.996 0 1 0 0-1.992H18.43a2.791 2.791 0 0 0-2.602-1.794c-1.187 0-2.2.747-2.602 1.794h-1.272a.996.996 0 1 0 0 1.992Zm3.874-1.792a.798.798 0 1 1-.002 1.595.798.798 0 0 1 .002-1.595ZM25.256 18.997a.996.996 0 1 0 0-1.993.996.996 0 0 0 0 1.993ZM22.512 18.997a.996.996 0 1 0 0-1.993.996.996 0 0 0 0 1.993ZM19.767 18.997a.996.996 0 1 0 0-1.993.996.996 0 0 0 0 1.993Z"/><path d="M65.012 6.705h-.373l.278-.278a2.14 2.14 0 0 0 0-3.023l-2.18-2.18a2.14 2.14 0 0 0-3.024 0l-5.48 5.48H2.987A2.992 2.992 0 0 0 0 9.694v41.366a3.656 3.656 0 0 0 3.652 3.653h23.594v7.046h-4.8a2.327 2.327 0 0 0-2.325 2.324v.996a2.327 2.327 0 0 0 2.324 2.324h23.11a2.327 2.327 0 0 0 2.324-2.325v-.995a2.327 2.327 0 0 0-2.324-2.324h-4.8v-7.046h10.643a.996.996 0 1 0 0-1.993H3.652c-.915 0-1.66-.744-1.66-1.66v-2.948h64.016v2.948c0 .916-.745 1.66-1.66 1.66h-8.301a.996.996 0 1 0 0 1.993h8.3A3.656 3.656 0 0 0 68 51.059V9.693a2.992 2.992 0 0 0-2.988-2.988ZM45.555 63.75c.183 0 .332.15.332.332v.996a.332.332 0 0 1-.332.332h-23.11a.332.332 0 0 1-.332-.332v-.996c0-.183.15-.332.332-.332h23.11Zm-16.317-9.038h9.524v7.046h-9.524v-7.046Zm31.884-52.08a.146.146 0 0 1 .206 0l2.18 2.18a.145.145 0 0 1 0 .206l-2.08 2.08-2.386-2.386 2.08-2.08Zm-3.49 3.49 2.387 2.385-.695.695-2.386-2.386.695-.695ZM55.53 8.224l2.386 2.386-11.787 11.787-2.386-2.386L55.53 8.225Zm-1.474 9.106a2.46 2.46 0 0 1 2.457 2.458 2.46 2.46 0 0 1-2.457 2.457 2.46 2.46 0 0 1-2.457-2.457l.002-.047 2.408-2.408c.016 0 .031-.003.047-.003Zm-9.657 6.155L41.45 24.69l1.204-2.948 1.744 1.744Zm21.61 22.633H1.992V9.693c0-.55.447-.996.996-.996H52.24l-1.519 1.519H16.867a.996.996 0 1 0 0 1.992H48.73l-7.026 7.026c-.198.2-.354.434-.46.696l-2.226 5.447c-.204.5-.089 1.07.293 1.453a1.336 1.336 0 0 0 1.453.293l5.447-2.225c.255-.104.482-.255.678-.445l3.03-3.03a4.454 4.454 0 0 0 4.137 2.815 4.454 4.454 0 0 0 4.449-4.45 4.454 4.454 0 0 0-2.814-4.135l3.445-3.445h3.362v30.4h-.528l-3.61-6.252a.996.996 0 1 0-1.725.996l3.035 5.256H45.754l-1.493-2.585 6.958-12.05 3.09 5.353a.996.996 0 1 0 1.726-.996l-3.298-5.711a1.736 1.736 0 0 0-1.518-.877c-.634 0-1.202.328-1.52.877L43.112 38.03l-8.454-14.643a1.736 1.736 0 0 0-1.519-.877c-.634 0-1.202.328-1.519.877l-2.246 3.89V16.602a2.327 2.327 0 0 0-2.324-2.324H9.961a2.327 2.327 0 0 0-2.324 2.324v21.782c0 .915.744 1.66 1.66 1.66h12.707l-1.48 2.565H5.503v-30.4h6.715a.996.996 0 1 0 0-1.992H5.17c-.915 0-1.66.745-1.66 1.66V42.94c0 .915.745 1.66 1.66 1.66H62.83c.915 0 1.66-.745 1.66-1.66V11.876c0-.915-.745-1.66-1.66-1.66h-1.702l1.52-1.519h2.365c.549 0 .996.447.996.996V46.12ZM27.382 22.118V38.05H9.629V22.118h17.753ZM9.629 20.126V16.6c0-.183.149-.332.332-.332h17.088c.184 0 .333.149.333.332v3.525H9.629Zm14.676 19.916h3.409c.915 0 1.66-.744 1.66-1.66v-2.11c.249.12.526.184.817.184.68 0 1.289-.351 1.629-.94l1.695-2.936a.206.206 0 0 1 .186-.108c.057 0 .135.02.186.108l1.045 1.81c.34.59.95.94 1.63.94.68 0 1.288-.35 1.628-.94l.26-.45 5.003 8.668h-20.63l1.482-2.566Zm5.069-7.104v-1.675l3.765-6.521 4.16 7.207-.738 1.278-.949-1.643a2.184 2.184 0 0 0-1.911-1.104c-.798 0-1.513.413-1.912 1.104l-1.599 2.769-.816-1.415Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h68v68H0z"/></clipPath></defs></svg>
+                        <h5>UI/UX Design</h5>
+                        <p class="text-main-neutral text-sm">Mobile App, Website Design</p>
+                    </div>
+                    <div class="card min-h-[310px]">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 74" width="68" height="68"><g fill="#FFB400"><path d="M37 0c-7.982 0-14.478 6.753-14.478 15.053V37c0 8.3 6.496 15.053 14.478 15.053 7.983 0 14.478-6.752 14.478-15.053V15.053C51.478 6.753 44.983 0 37 0Zm0 48.835c-5.688 0-10.393-4.46-11.145-10.226h22.289c-.75 5.767-5.455 10.226-11.144 10.226Zm11.261-13.444H25.74V15.053C25.74 8.526 30.791 3.217 37 3.217c6.21 0 11.261 5.31 11.261 11.836V35.39Z"/><path d="M59.522 28.956a1.61 1.61 0 0 0-1.609 1.61V37c0 11.531-9.382 20.913-20.913 20.913S16.087 48.531 16.087 37v-6.435a1.61 1.61 0 0 0-3.217 0V37c0 12.762 9.966 23.215 22.521 24.048v9.735h-8.043a1.61 1.61 0 0 0 0 3.217h19.304a1.61 1.61 0 0 0 0-3.217H38.61v-9.735C51.165 60.215 61.13 49.762 61.13 37v-6.435a1.61 1.61 0 0 0-1.608-1.609Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h74v74H0z"/></clipPath></defs></svg>
+                        <h5>Sound Design</h5>
+                        <p class="text-main-neutral text-sm">Voice Over, Beat Making</p>
+                    </div>
+                    <div class="card min-h-[310px]">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 74" width="68" height="68"><path d="M32.375 38.156h9.25v2.313h-9.25v-2.313Z" fill="#FFB400"/><path d="M35.844 34.688h2.312v9.25h-2.312v-9.25ZM65.906 38.156h2.313v2.313h-2.313v-2.313ZM56.656 38.156h2.313v2.313h-2.313v-2.313ZM61.281 33.531h2.313v2.313H61.28V33.53ZM61.281 42.781h2.313v2.313H61.28V42.78ZM10.66 20.379l-5.203-6.504 5.203-6.504 1.805 1.445-4.047 5.059 4.047 5.059-1.805 1.445ZM28.653 20.379l-1.806-1.445 4.048-5.059-4.048-5.059 1.806-1.445 5.202 6.504-5.202 6.504ZM14.738 17.738l8.096-9.248 1.74 1.522-8.096 9.249-1.74-1.523ZM9.25 50.875H4.625V46.25h2.313v2.313H9.25v2.312Z" fill="#FFB400"/><path d="M70.531 2.313H3.47A3.469 3.469 0 0 0 0 5.78v46.25A3.469 3.469 0 0 0 3.469 55.5H27.75v5.781a3.469 3.469 0 0 1-3.469 3.469H18.5v6.938h37V64.75h-5.781a3.469 3.469 0 0 1-3.469-3.469V55.5h24.281A3.469 3.469 0 0 0 74 52.031V5.781a3.469 3.469 0 0 0-3.469-3.468Zm-17.344 64.75v2.312H20.813v-2.313h32.374ZM37 62.486a3.469 3.469 0 0 0 3.469-3.469V55.5h3.468v5.781a5.724 5.724 0 0 0 1.187 3.469H28.876a5.724 5.724 0 0 0 1.186-3.469V55.5h3.47v3.517A3.469 3.469 0 0 0 37 62.487Zm-1.156-3.469V55.5h2.312v3.517a1.156 1.156 0 0 1-2.312 0Zm35.843-6.986c0 .639-.517 1.157-1.156 1.157H3.47a1.156 1.156 0 0 1-1.156-1.157V41.625h23.356A11.553 11.553 0 0 0 47 45.094h5.435a11.532 11.532 0 0 0 19.252 1.126v5.811Zm-9.25-3.468a9.198 9.198 0 0 1-8.276-5.141l-.32-.64h-8.244l-.32.64A9.25 9.25 0 1 1 37 30.062h25.438a9.25 9.25 0 0 1 9.25 9.25 9.25 9.25 0 0 1-9.25 9.25Zm9.25-16.158a11.54 11.54 0 0 0-9.25-4.655H37c-6.383.007-11.556 5.18-11.563 11.563H2.313V5.78c0-.638.518-1.156 1.157-1.156H70.53c.639 0 1.156.518 1.156 1.156v26.624Z" fill="#FFB400"/><path d="M47.406 38.156h4.625v2.313h-4.625v-2.313ZM34.688 9.25h9.25v2.313h-9.25V9.25ZM48.563 9.25h18.5v2.313h-18.5V9.25ZM50.875 13.875h16.188v2.313H50.874v-2.313ZM37 13.875h9.25v2.313H37v-2.313ZM34.688 18.5h23.124v2.313H34.689V18.5ZM62.438 18.5h4.624v2.313h-4.624V18.5ZM6.938 23.125H18.5v2.313H6.937v-2.313ZM23.125 23.125h21.969v2.313H23.125v-2.313ZM48.563 23.125h18.5v2.313h-18.5v-2.313ZM6.938 27.75h18.5v2.313h-18.5V27.75ZM6.938 32.375h9.25v2.313h-9.25v-2.313ZM18.5 32.375h4.625v2.313H18.5v-2.313Z" fill="#FFB400"/></svg>
+                        <h5>Game Design</h5>
+                        <p class="text-main-neutral text-sm">Character Design, Props & Objects</p>
+                    </div>
+                    <div class="card min-h-[310px]">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 74" width="68" height="68"><path d="M32.375 38.156h9.25v2.313h-9.25v-2.313Z" fill="#FFB400"/><path d="M35.844 34.688h2.312v9.25h-2.312v-9.25ZM65.906 38.156h2.313v2.313h-2.313v-2.313ZM56.656 38.156h2.313v2.313h-2.313v-2.313ZM61.281 33.531h2.313v2.313H61.28V33.53ZM61.281 42.781h2.313v2.313H61.28V42.78ZM10.66 20.379l-5.203-6.504 5.203-6.504 1.805 1.445-4.047 5.059 4.047 5.059-1.805 1.445ZM28.653 20.379l-1.806-1.445 4.048-5.059-4.048-5.059 1.806-1.445 5.202 6.504-5.202 6.504ZM14.738 17.738l8.096-9.248 1.74 1.522-8.096 9.249-1.74-1.523ZM9.25 50.875H4.625V46.25h2.313v2.313H9.25v2.312Z" fill="#FFB400"/><path d="M70.531 2.313H3.47A3.469 3.469 0 0 0 0 5.78v46.25A3.469 3.469 0 0 0 3.469 55.5H27.75v5.781a3.469 3.469 0 0 1-3.469 3.469H18.5v6.938h37V64.75h-5.781a3.469 3.469 0 0 1-3.469-3.469V55.5h24.281A3.469 3.469 0 0 0 74 52.031V5.781a3.469 3.469 0 0 0-3.469-3.468Zm-17.344 64.75v2.312H20.813v-2.313h32.374ZM37 62.486a3.469 3.469 0 0 0 3.469-3.469V55.5h3.468v5.781a5.724 5.724 0 0 0 1.187 3.469H28.876a5.724 5.724 0 0 0 1.186-3.469V55.5h3.47v3.517A3.469 3.469 0 0 0 37 62.487Zm-1.156-3.469V55.5h2.312v3.517a1.156 1.156 0 0 1-2.312 0Zm35.843-6.986c0 .639-.517 1.157-1.156 1.157H3.47a1.156 1.156 0 0 1-1.156-1.157V41.625h23.356A11.553 11.553 0 0 0 47 45.094h5.435a11.532 11.532 0 0 0 19.252 1.126v5.811Zm-9.25-3.468a9.198 9.198 0 0 1-8.276-5.141l-.32-.64h-8.244l-.32.64A9.25 9.25 0 1 1 37 30.062h25.438a9.25 9.25 0 0 1 9.25 9.25 9.25 9.25 0 0 1-9.25 9.25Zm9.25-16.158a11.54 11.54 0 0 0-9.25-4.655H37c-6.383.007-11.556 5.18-11.563 11.563H2.313V5.78c0-.638.518-1.156 1.157-1.156H70.53c.639 0 1.156.518 1.156 1.156v26.624Z" fill="#FFB400"/><path d="M47.406 38.156h4.625v2.313h-4.625v-2.313ZM34.688 9.25h9.25v2.313h-9.25V9.25ZM48.563 9.25h18.5v2.313h-18.5V9.25ZM50.875 13.875h16.188v2.313H50.874v-2.313ZM37 13.875h9.25v2.313H37v-2.313ZM34.688 18.5h23.124v2.313H34.689V18.5ZM62.438 18.5h4.624v2.313h-4.624V18.5ZM6.938 23.125H18.5v2.313H6.937v-2.313ZM23.125 23.125h21.969v2.313H23.125v-2.313ZM48.563 23.125h18.5v2.313h-18.5v-2.313ZM6.938 27.75h18.5v2.313h-18.5V27.75ZM6.938 32.375h9.25v2.313h-9.25v-2.313ZM18.5 32.375h4.625v2.313H18.5v-2.313Z" fill="#FFB400"/></svg>
+                        <h5>Photography</h5>
+                        <p class="text-main-neutral text-sm">Portrait, Product Photography</p>
+                    </div>
+                    <div class="card min-h-[310px]">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 74" width="68" height="68"><path d="M32.375 38.156h9.25v2.313h-9.25v-2.313Z" fill="#FFB400"/><path d="M35.844 34.688h2.312v9.25h-2.312v-9.25ZM65.906 38.156h2.313v2.313h-2.313v-2.313ZM56.656 38.156h2.313v2.313h-2.313v-2.313ZM61.281 33.531h2.313v2.313H61.28V33.53ZM61.281 42.781h2.313v2.313H61.28V42.78ZM10.66 20.379l-5.203-6.504 5.203-6.504 1.805 1.445-4.047 5.059 4.047 5.059-1.805 1.445ZM28.653 20.379l-1.806-1.445 4.048-5.059-4.048-5.059 1.806-1.445 5.202 6.504-5.202 6.504ZM14.738 17.738l8.096-9.248 1.74 1.522-8.096 9.249-1.74-1.523ZM9.25 50.875H4.625V46.25h2.313v2.313H9.25v2.312Z" fill="#FFB400"/><path d="M70.531 2.313H3.47A3.469 3.469 0 0 0 0 5.78v46.25A3.469 3.469 0 0 0 3.469 55.5H27.75v5.781a3.469 3.469 0 0 1-3.469 3.469H18.5v6.938h37V64.75h-5.781a3.469 3.469 0 0 1-3.469-3.469V55.5h24.281A3.469 3.469 0 0 0 74 52.031V5.781a3.469 3.469 0 0 0-3.469-3.468Zm-17.344 64.75v2.312H20.813v-2.313h32.374ZM37 62.486a3.469 3.469 0 0 0 3.469-3.469V55.5h3.468v5.781a5.724 5.724 0 0 0 1.187 3.469H28.876a5.724 5.724 0 0 0 1.186-3.469V55.5h3.47v3.517A3.469 3.469 0 0 0 37 62.487Zm-1.156-3.469V55.5h2.312v3.517a1.156 1.156 0 0 1-2.312 0Zm35.843-6.986c0 .639-.517 1.157-1.156 1.157H3.47a1.156 1.156 0 0 1-1.156-1.157V41.625h23.356A11.553 11.553 0 0 0 47 45.094h5.435a11.532 11.532 0 0 0 19.252 1.126v5.811Zm-9.25-3.468a9.198 9.198 0 0 1-8.276-5.141l-.32-.64h-8.244l-.32.64A9.25 9.25 0 1 1 37 30.062h25.438a9.25 9.25 0 0 1 9.25 9.25 9.25 9.25 0 0 1-9.25 9.25Zm9.25-16.158a11.54 11.54 0 0 0-9.25-4.655H37c-6.383.007-11.556 5.18-11.563 11.563H2.313V5.78c0-.638.518-1.156 1.157-1.156H70.53c.639 0 1.156.518 1.156 1.156v26.624Z" fill="#FFB400"/><path d="M47.406 38.156h4.625v2.313h-4.625v-2.313ZM34.688 9.25h9.25v2.313h-9.25V9.25ZM48.563 9.25h18.5v2.313h-18.5V9.25ZM50.875 13.875h16.188v2.313H50.874v-2.313ZM37 13.875h9.25v2.313H37v-2.313ZM34.688 18.5h23.124v2.313H34.689V18.5ZM62.438 18.5h4.624v2.313h-4.624V18.5ZM6.938 23.125H18.5v2.313H6.937v-2.313ZM23.125 23.125h21.969v2.313H23.125v-2.313ZM48.563 23.125h18.5v2.313h-18.5v-2.313ZM6.938 27.75h18.5v2.313h-18.5V27.75ZM6.938 32.375h9.25v2.313h-9.25v-2.313ZM18.5 32.375h4.625v2.313H18.5v-2.313Z" fill="#FFB400"/></svg>
+                        <h5>Advertising</h5>
+                        <p class="text-main-neutral text-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.</p>
+                        <a href="#" class="text-primary-default uppercase text-[12px] flex items-center">
+                            <span>Order Now</span>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><path d="M10.143 10 7.786 7.644l1.178-1.18L12.5 10l-3.536 3.536-1.178-1.18L10.143 10Z" fill="#FFB400"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pricing-plans" class="mt-[70px] text-center">
+                <h4 class="text-main-default text-4xl font-bold">Pricing Plans</h4>
+                <p class="text-main-neutral mt-6 max-w-[440px] mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+
+                <div class="grid grid-cols-3 mt-12 gap-5">
+                    <div class="bg-white flex flex-col px-8 py-12 gap-2">
+                        <h4 class="text-xl font-bold">Silver</h4>
+                        <div class="text-2xl font-bold">$0.00 <small class="text-sm font-normal">/Hour</small></div>
+                        <p class="text-main-neutral">For most businesses that want to optimize web queries</p>
+
+                        <ul class="list-none mt-4 flex flex-col gap-4">
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">UI Design</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">Web Development</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m12.443 10.586 5.132-4.95 1.466 1.414L13.91 12l5.132 4.95-1.466 1.414-5.132-4.95-5.133 4.95-1.466-1.414L10.976 12 5.844 7.05 7.31 5.636l5.133 4.95Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-main-neutral">Logo Design</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m12.443 10.586 5.132-4.95 1.466 1.414L13.91 12l5.132 4.95-1.466 1.414-5.132-4.95-5.133 4.95-1.466-1.414L10.976 12 5.844 7.05 7.31 5.636l5.133 4.95Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-main-neutral">Seo Optimization</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m12.443 10.586 5.132-4.95 1.466 1.414L13.91 12l5.132 4.95-1.466 1.414-5.132-4.95-5.133 4.95-1.466-1.414L10.976 12 5.844 7.05 7.31 5.636l5.133 4.95Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-main-neutral">WordPress Integration</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m12.443 10.586 5.132-4.95 1.466 1.414L13.91 12l5.132 4.95-1.466 1.414-5.132-4.95-5.133 4.95-1.466-1.414L10.976 12 5.844 7.05 7.31 5.636l5.133 4.95Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-main-neutral">5 Websites</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m12.443 10.586 5.132-4.95 1.466 1.414L13.91 12l5.132 4.95-1.466 1.414-5.132-4.95-5.133 4.95-1.466-1.414L10.976 12 5.844 7.05 7.31 5.636l5.133 4.95Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-main-neutral">Unlimited User</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m12.443 10.586 5.132-4.95 1.466 1.414L13.91 12l5.132 4.95-1.466 1.414-5.132-4.95-5.133 4.95-1.466-1.414L10.976 12 5.844 7.05 7.31 5.636l5.133 4.95Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-main-neutral">20 GB Bandwidth</span>
+                            </li>
+                        </ul>
+
+                        <button type="button" class="bg-white shadow-2xl text-black uppercase font-bold px-8 py-4 rounded-full mt-8">Order Now</button>
+                    </div>
+                    <div class="bg-white flex flex-col px-8 py-12 gap-2 relative">
+                        <div class="bg-primary-default text-black py-1 w-full absolute top-0 left-0">Most Popular</div>
+                        <h4 class="text-xl font-bold">Gold</h4>
+                        <div class="text-2xl font-bold">$50.00 <small class="text-sm font-normal">/Hour</small></div>
+                        <p class="text-main-neutral">For most businesses that want to optimize web queries</p>
+
+                        <ul class="list-none mt-4 flex flex-col gap-4">
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">UI Design</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">Web Development</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">Logo Design</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">Seo Optimization</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m12.443 10.586 5.132-4.95 1.466 1.414L13.91 12l5.132 4.95-1.466 1.414-5.132-4.95-5.133 4.95-1.466-1.414L10.976 12 5.844 7.05 7.31 5.636l5.133 4.95Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-main-neutral">WordPress Integration</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m12.443 10.586 5.132-4.95 1.466 1.414L13.91 12l5.132 4.95-1.466 1.414-5.132-4.95-5.133 4.95-1.466-1.414L10.976 12 5.844 7.05 7.31 5.636l5.133 4.95Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-main-neutral">5 Websites</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m12.443 10.586 5.132-4.95 1.466 1.414L13.91 12l5.132 4.95-1.466 1.414-5.132-4.95-5.133 4.95-1.466-1.414L10.976 12 5.844 7.05 7.31 5.636l5.133 4.95Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-main-neutral">Unlimited User</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m12.443 10.586 5.132-4.95 1.466 1.414L13.91 12l5.132 4.95-1.466 1.414-5.132-4.95-5.133 4.95-1.466-1.414L10.976 12 5.844 7.05 7.31 5.636l5.133 4.95Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-main-neutral">20 GB Bandwidth</span>
+                            </li>
+                        </ul>
+
+                        <button type="button" class="button bg-primary-default w-full rounded-full mt-8">Order Now</button>
+                    </div>
+                    <div class="bg-white flex flex-col px-8 py-12 gap-2">
+                        <h4 class="text-xl font-bold">Diamond</h4>
+                        <div class="text-2xl font-bold">$80.00 <small class="text-sm font-normal">/Hour</small></div>
+                        <p class="text-main-neutral">For most businesses that want to optimize web queries</p>
+
+                        <ul class="list-none mt-4 flex flex-col gap-4">
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">UI Design</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">Web Development</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">Logo Design</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">Seo Optimization</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">WordPress Integration</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">5 Websites</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">Unlimited User</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" width="24" height="24"><g><path d="m10.369 15.172 9.53-9.193 1.468 1.414L10.369 18 3.77 11.636l1.466-1.414 5.133 4.95Z" fill="#FFB400"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24.885v24H0z"/></clipPath></defs></svg>
+                                <span class="text-black">20 GB Bandwidth</span>
+                            </li>
+                        </ul>
+
+                        <button type="button" class="bg-white shadow-2xl text-black uppercase font-bold px-8 py-4 rounded-full mt-8">Order Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recommendations" class="mt-[70px] text-center">
+                <h4 class="text-main-default text-4xl font-bold">Recommendations</h4>
+                <p class="text-main-neutral mt-6 max-w-[440px] mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+
+                <div class="grid grid-cols-3 mt-12 gap-5 text-left">
+                    <div class="bg-white shadow-sm p-10 flex flex-col gap-5">
+                        <div class="flex items-center gap-2">
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                        </div>
+                        <h4>Great Quality!</h4>
+                        <p class="text-main-neutral">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
+                        <div class="flex items-center gap-4">
+                            <img srcset="./images/recommendation-1.jpg" alt="Recommendation 1" width="80" height="80" />
+                            <div>
+                                <h5 class="text-main-default text-lg font-medium">James Gouse</h5>
+                                <p class="text-main-neutral text-sm">Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm p-10 flex flex-col gap-5">
+                        <div class="flex items-center gap-2">
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                        </div>
+                        <h4>Amazing Work!</h4>
+                        <p class="text-main-neutral">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
+                        <div class="flex items-center gap-4">
+                            <img srcset="./images/recommendation-2.jpg" alt="Recommendation 1" width="80" height="80" />
+                            <div>
+                                <h5 class="text-main-default text-lg font-medium">Tiana Philips</h5>
+                                <p class="text-main-neutral text-sm">Photographer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm p-10 flex flex-col gap-5">
+                        <div class="flex items-center gap-2">
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="m9 13.245 3.91-1.01 1.635 5.133L9 13.245Zm9-6.636h-6.884L9 0 6.884 6.609H0l5.571 4.096-2.116 6.609 5.572-4.097 3.428-2.512L18 6.61Z" fill="#FFB400"/></svg>
+                        </div>
+                        <h4>Nice Job!</h4>
+                        <p class="text-main-neutral">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
+                        <div class="flex items-center gap-4">
+                            <img srcset="./images/recommendation-3.jpg" alt="Recommendation 1" width="80" height="80" />
+                            <div>
+                                <h5 class="text-main-default text-lg font-medium">Talan Westervelt</h5>
+                                <p class="text-main-neutral text-sm">Business Man</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="mt-[70px] text-center">
+                <h4 class="text-main-default text-4xl font-bold">Education</h4>
+                <p class="text-main-neutral mt-6 max-w-[440px] mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+                
+                <div class="bg-white shadow-sm py-12 px-9 mt-12 text-left">
+                    <ul class="list-none flex flex-col gap-7 mt-2">
+                        <li class="flex flex-col gap-7 border-b border-main-muted pb-4">
+                            <div class="grid grid-cols-[1fr_2fr]">
+                                <h5 class="font-semibold">Universtiy Of Toronto</h5>
+                                <h5 class="font-semibold">Certificate of web training</h5>
+                            </div>
+                            <div class="grid grid-cols-[1fr_2fr]">
+                                <div class="flex items-center gap-4 self-start">
+                                    <span>Student</span>
+                                    <span class="bg-primary-default text-white px-2 py-0.5 text-xs font-light">Jan 2016 - Dec 2021</span>
+                                </div>
+                                <p class="text-main-neutral">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, omnis! Numquam quasi sequi minus ullam itaque molestias nisi. Eaque, rerum praesentium assumenda dolor iusto repudiandae, possimus rem mollitia a quis aliquam sed, dolorem sint illo quaerat corporis. Animi dolore repudiandae aspernatur dolor. Pariatur alias incidunt doloribus soluta, vero a excepturi.</p>
+                            </div>
+                        </li>
+                        <li class="flex flex-col gap-7 border-b border-main-muted pb-4">
+                            <div class="grid grid-cols-[1fr_2fr]">
+                                <h5 class="font-semibold">Programming Course</h5>
+                                <h5 class="font-semibold">Certificate of web training</h5>
+                            </div>
+                            <div class="grid grid-cols-[1fr_2fr]">
+                                <div class="flex items-center gap-4 self-start">
+                                    <span>Student</span>
+                                    <span class="bg-primary-default text-white px-2 py-0.5 text-xs font-light">Jan 2016 - Dec 2021</span>
+                                </div>
+                                <p class="text-main-neutral">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, omnis! Numquam quasi sequi minus ullam itaque molestias nisi. Eaque, rerum praesentium assumenda dolor iusto repudiandae, possimus rem mollitia a quis aliquam sed, dolorem sint illo quaerat corporis. Animi dolore repudiandae aspernatur dolor. Pariatur alias incidunt doloribus soluta, vero a excepturi.</p>
+                            </div>
+                        </li>
+                        <li class="flex flex-col gap-7">
+                            <div class="grid grid-cols-[1fr_2fr]">
+                                <h5 class="font-semibold">Web developer courses</h5>
+                                <h5 class="font-semibold">Certificate of web training</h5>
+                            </div>
+                            <div class="grid grid-cols-[1fr_2fr]">
+                                <div class="flex items-center gap-4 self-start">
+                                    <span>Student</span>
+                                    <span class="bg-primary-default text-white px-2 py-0.5 text-xs font-light">Jan 2016 - Dec 2021</span>
+                                </div>
+                                <p class="text-main-neutral">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, omnis! Numquam quasi sequi minus ullam itaque molestias nisi. Eaque, rerum praesentium assumenda dolor iusto repudiandae, possimus rem mollitia a quis aliquam sed, dolorem sint illo quaerat corporis. Animi dolore repudiandae aspernatur dolor. Pariatur alias incidunt doloribus soluta, vero a excepturi.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section id="work-history" class="mt-[70px] text-center">
+                <h4 class="text-main-default text-4xl font-bold">Work History</h4>
+                <p class="text-main-neutral mt-6 max-w-[440px] mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+                
+                <div class="bg-white shadow-sm py-12 px-9 mt-12 text-left">
+                    <ul class="list-none flex flex-col gap-7 mt-2">
+                        <li class="flex flex-col gap-7 border-b border-main-muted pb-4">
+                            <div class="grid grid-cols-[1fr_2fr]">
+                                <h5 class="font-semibold">Lead Web Designer</h5>
+                                <h5 class="font-semibold">Certificate of web training</h5>
+                            </div>
+                            <div class="grid grid-cols-[1fr_2fr]">
+                                <div class="flex items-center gap-4 self-start">
+                                    <span>Student</span>
+                                    <span class="bg-primary-default text-white px-2 py-0.5 text-xs font-light">Jan 2016 - Dec 2021</span>
+                                </div>
+                                <p class="text-main-neutral">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, omnis! Numquam quasi sequi minus ullam itaque molestias nisi. Eaque, rerum praesentium assumenda dolor iusto repudiandae, possimus rem mollitia a quis aliquam sed, dolorem sint illo quaerat corporis. Animi dolore repudiandae aspernatur dolor. Pariatur alias incidunt doloribus soluta, vero a excepturi.</p>
+                            </div>
+                        </li>
+                        <li class="flex flex-col gap-7 border-b border-main-muted pb-4">
+                            <div class="grid grid-cols-[1fr_2fr]">
+                                <h5 class="font-semibold">Junior Web Designer</h5>
+                                <h5 class="font-semibold">Certificate of web training</h5>
+                            </div>
+                            <div class="grid grid-cols-[1fr_2fr]">
+                                <div class="flex items-center gap-4 self-start">
+                                    <span>Student</span>
+                                    <span class="bg-primary-default text-white px-2 py-0.5 text-xs font-light">Jan 2016 - Dec 2021</span>
+                                </div>
+                                <p class="text-main-neutral">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, omnis! Numquam quasi sequi minus ullam itaque molestias nisi. Eaque, rerum praesentium assumenda dolor iusto repudiandae, possimus rem mollitia a quis aliquam sed, dolorem sint illo quaerat corporis. Animi dolore repudiandae aspernatur dolor. Pariatur alias incidunt doloribus soluta, vero a excepturi.</p>
+                            </div>
+                        </li>
+                        <li class="flex flex-col gap-7">
+                            <div class="grid grid-cols-[1fr_2fr]">
+                                <h5 class="font-semibold">Senior Web Designer</h5>
+                                <h5 class="font-semibold">Certificate of web training</h5>
+                            </div>
+                            <div class="grid grid-cols-[1fr_2fr]">
+                                <div class="flex items-center gap-4 self-start">
+                                    <span>Student</span>
+                                    <span class="bg-primary-default text-white px-2 py-0.5 text-xs font-light">Jan 2016 - Dec 2021</span>
+                                </div>
+                                <p class="text-main-neutral">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, omnis! Numquam quasi sequi minus ullam itaque molestias nisi. Eaque, rerum praesentium assumenda dolor iusto repudiandae, possimus rem mollitia a quis aliquam sed, dolorem sint illo quaerat corporis. Animi dolore repudiandae aspernatur dolor. Pariatur alias incidunt doloribus soluta, vero a excepturi.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section id="location" class="mt-[70px]">
+                <img src="./images/map.jpg" alt="Map" width="100%" height="300">
+            </section>
+
+            <section id="partners" class="flex items-center justify-between mt-[70px]">
+                <img src="./images/partner-1.png" alt="Partners1" width="140px" height="140px">
+                <img src="./images/partner-2.png" alt="Partners2" width="140px" height="140px">
+                <img src="./images/partner-3.png" alt="Partners3" width="140px" height="140px">
+                <img src="./images/partner-4.png" alt="Partners4" width="140px" height="140px">
+            </section>
+
+            <footer id="main-footer" class="bg-white py-12 mt-[70px]">
+                <p class="text-main-neutral text-center">&copy; 2024 All Rights Reserved.Ojjomedia</p>
+            </footer>
+        </main>
+
+        <!-- The right sidebar -->
+        <aside class="right-sidebar w-[108px] bg-white min-h-[100vh] shadow-sm py-10 px-5 flex flex-col items-center">
+            <button type="button">
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30"><path d="M15.5 27C8.596 27 3 21.404 3 14.5S8.596 2 15.5 2 28 7.596 28 14.5 22.404 27 15.5 27Zm-8.339-6.969A10 10 0 1 0 21.031 6.16a11.247 11.247 0 0 1-2.88 10.991 11.246 11.246 0 0 1-10.99 2.88Z" fill="#2B2B2B"/></svg>
+            </button>
+            <div class="flex flex-col gap-10 mt-[200px]">
+                <button type="button" class="w-10 h-10 flex items-center justify-center p-0 m-0 bg-primary-default rounded-full">
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18">
+                        <path d="M17.25 8.25l-7.745-7.04a.75.75 0 0 0-1.01 0L.75 8.25h2.25V15c0 .414.336.75.75.75h10.5a.75.75 0 0 0 .75-.75V8.25h2.25z" fill="#2B2B2B"/>
+                    </svg>
+                </button>
+                <button type="button" class="w-10 h-10 flex items-center justify-center bg-surface-aqua rounded-full">
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="M17.5 4.287V4.5H12V0h.26c.274 0 .536.089.73.247l4.208 3.443a.775.775 0 0 1 .302.597Zm-5.844 1.338c-.567 0-1.031-.38-1.031-.844V0H2.031C1.461 0 1 .378 1 .844v16.312c0 .466.462.844 1.031.844H16.47c.57 0 1.031-.378 1.031-.844V5.625h-5.844ZM6.294 14.08a.239.239 0 0 1-.074.043.275.275 0 0 1-.254-.034L3.179 11.95a.196.196 0 0 1-.054-.063.161.161 0 0 1 0-.151.195.195 0 0 1 .054-.063l2.787-2.138a.245.245 0 0 1 .077-.04.279.279 0 0 1 .177.006c.028.01.053.025.074.043l.841.734a.19.19 0 0 1 .049.064.159.159 0 0 1-.009.148.2.2 0 0 1-.056.06l-1.751 1.261 1.751 1.262a.2.2 0 0 1 .056.06.159.159 0 0 1 .009.148.19.19 0 0 1-.049.064l-.841.734Zm2.204 1.775-1.18-.28a.229.229 0 0 1-.138-.091.16.16 0 0 1-.02-.145L9.8 7.9a.203.203 0 0 1 .111-.113.278.278 0 0 1 .177-.016l1.18.28c.029.007.056.019.08.034a.204.204 0 0 1 .058.057.159.159 0 0 1 .02.144l-2.64 7.44a.181.181 0 0 1-.042.066.228.228 0 0 1-.07.048.267.267 0 0 1-.176.016Zm6.91-3.904-2.788 2.138a.243.243 0 0 1-.077.04.282.282 0 0 1-.177-.006.24.24 0 0 1-.074-.043l-.841-.734a.188.188 0 0 1-.049-.064.159.159 0 0 1 .009-.148.2.2 0 0 1 .056-.06l1.751-1.261-1.751-1.262a.2.2 0 0 1-.056-.06.163.163 0 0 1-.009-.148.19.19 0 0 1 .049-.064l.841-.734a.236.236 0 0 1 .074-.043.276.276 0 0 1 .254.034l2.787 2.138c.023.018.042.04.054.063a.16.16 0 0 1 0 .151.195.195 0 0 1-.054.063Z" fill="#767676"/></svg>
+                </button>
+                <button type="button" class="w-10 h-10 flex items-center justify-center p-0 m-0 bg-surface-aqua rounded-full">
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="M12.764 11.272 9.25 14.626l-3.514-3.354C3.103 11.381 1 13.438 1 15.976v.337c0 .932.792 1.688 1.768 1.688h12.964c.976 0 1.768-.756 1.768-1.688v-.337c0-2.538-2.103-4.595-4.736-4.704ZM1.5 2.806l.236.053v2.053c-.258.148-.442.405-.442.714 0 .295.17.541.408.692l-.574 2.19c-.063.243.077.493.28.493h1.54c.202 0 .342-.25.28-.492l-.575-2.19c.24-.152.409-.398.409-.693 0-.31-.185-.566-.442-.714V3.063l2.43.559a4.303 4.303 0 0 0-.515 2.004c0 2.485 2.11 4.5 4.714 4.5 2.604 0 4.714-2.015 4.714-4.5 0-.724-.195-1.4-.515-2.004l3.546-.816c.67-.154.67-.952 0-1.107L9.983.082a3.31 3.31 0 0 0-1.462 0L1.5 1.695c-.667.155-.667.957 0 1.111Z" fill="#767676"/></svg>
+                </button>
+                <button type="button" class="w-10 h-10 flex items-center justify-center bg-surface-aqua rounded-full">
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="M6.75 9.75V12h4.5V9.75h5.25V15a.75.75 0 0 1-.75.75H2.25A.75.75 0 0 1 1.5 15V9.75h5.25Zm1.5-1.5h1.5v2.25h-1.5V8.25Zm-3-4.5V1.5A.75.75 0 0 1 6 .75h6a.75.75 0 0 1 .75.75v2.25h3a.75.75 0 0 1 .75.75v3.75h-5.25v-1.5h-4.5v1.5H1.5V4.5a.75.75 0 0 1 .75-.75h3Zm1.5-1.5v1.5h4.5v-1.5h-4.5Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v18H0z"/></clipPath></defs></svg>
+                </button>
+                <button type="button" class="w-10 h-10 flex items-center justify-center p-0 m-0 bg-surface-aqua rounded-full">
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="M15.75 1.5C4.5 1.5 3 12 2.25 16.5h1.498c.5-2.5 1.75-3.874 3.752-4.125 3-.375 5.25-3 6-5.25l-1.125-.75.75-.75c.75-.75 1.503-1.875 2.625-4.125Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v18H0z"/></clipPath></defs></svg>
+                </button>
+                <button type="button" class="w-10 h-10 flex items-center justify-center bg-surface-aqua rounded-full">
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path d="M4.841 14.25 1.5 16.875V3a.75.75 0 0 1 .75-.75h13.5a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75H4.841Z" fill="#767676"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v18H0z"/></clipPath></defs></svg>
+                </button>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

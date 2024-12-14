@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    overflow: hidden;
+}
+
+.calculator-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    
+}
+
+.calculator-header {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.display {
+    width: 100%;
+    min-height: 200px;
+    background-color: #f1f1f1;
+    color: #222;
+    text-align: right;
+    padding: 20px;
+    font-size: 24px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.button {
+    width: 80px;
+    height: 80px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.button:active {
+    background-color: #ccc;
+}

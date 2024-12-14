@@ -22,6 +22,9 @@ module.exports = {
           active: "#FFD680",
           disabled: "#FFE8B3",
         },
+        secondary: {
+          default: 'hotpink'
+        },
         main: {
           default: '#2B2B2B',
           neutral: '#767676',
